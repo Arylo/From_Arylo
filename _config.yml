@@ -9,6 +9,13 @@ description:
 author: Arylo
 email: arylo.open@gmail.com
 language: zh-CN
+keywords:
+  - Arylo
+  - Javascript
+  - OpenWrt
+  - Pandorabox
+  - Luci
+  - Chrome
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -90,3 +97,23 @@ deploy:
   repo:
     github: https://github.com/Arylo/arylo.github.io.git,master
     gitcafe: https://gitcafe.com/Arylo/arylo.git,gitcafe-pages
+
+# =============================================================================
+# NexT Theme configuration
+# =============================================================================
+since: 2014
+
+menu:
+  home: /
+  archives: /archives
+  tags: /tags
+
+icon_font: default
+
+highlight_theme: normal
+
+social:
+  GitHub: https://github.com/Arylo
+# =============================================================================
+# End NexT Theme configuration
+# =============================================================================

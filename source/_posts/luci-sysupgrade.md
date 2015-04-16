@@ -1,7 +1,18 @@
 title: Luci 上传文件源码分析
 date: 2015-03-16 15:07:22
-tags: [Luci, openwrt, 固件上传]
+tags:
+  - Luci
+  - openwrt
+  - 固件上传
+categories: Luci
+keywords:
+  - Luci
+  - OpenWrt
+  - Upload
+  - 固件上传
+  - setfilehandler
 ---
+
 ### 前言
 怕忘记, 在这里保存一下
 所有源码都在`system.lua`的`action_flashops`方法下

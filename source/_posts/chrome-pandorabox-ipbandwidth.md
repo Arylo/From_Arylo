@@ -1,6 +1,16 @@
 title: '[Chrome扩展]Pandorabox IP实时流量插件'
 date: 2015-03-16 15:48:31
-tags: [pandorabox, chrome, arylo]
+tags:
+  - Pandorabox
+  - Chrome
+  - Arylo
+categories: ChromeExtension
+keywords:
+  - PandoraBox
+  - Chrome
+  - Extension
+  - Arylo
+  - 扩展
 ---
 
 源码地址: [地址][github]

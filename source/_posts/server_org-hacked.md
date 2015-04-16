@@ -1,6 +1,14 @@
 title: 服务器被黑了!
 date: 2015-04-14 00:01:27
-tags: [被黑了,服务器日志]
+tags:
+  - 被黑了
+  - 服务器日志
+categories: 服务器
+keywords:
+  - Pandorabox
+  - Hacked
+  - 渣渣
+  - Arylo
 ---
 
 > 20150413 11:15PM, 准备睡觉的时候, lintel大大打给我说, 服务器上传流量异常.
@@ -56,7 +64,7 @@ arylo@localhost:/tmp$ ps -A|grep netns
 ```
 只好手动rm他们, 再kill一下他们, 并祈祷不要再运行了
 
-PS.可能有点误会, 主要git用户运行的程序不多, 所以基本可以找到那个是有问题的
+PS.主要是git用户运行的程序不多, 所以基本可以找到那个是有问题的
 
 # 还有谁
 

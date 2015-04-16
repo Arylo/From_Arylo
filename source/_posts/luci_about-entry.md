@@ -1,6 +1,13 @@
 title: 关于Entry()
 date: 2014-12-16 12:12:12
-tags: [Luci, openwrt]
+tags:
+  - Luci
+  - openwrt
+categories: Luci
+keywords:
+  - Luci
+  - OpenWrt
+  - Entry
 ---
 
 ## 关于Entry

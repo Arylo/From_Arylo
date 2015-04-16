@@ -1,6 +1,9 @@
 title: 修改Luci默认主题
 date: 2014-12-08 12:12:12
-tags: [Luci, openwrt]
+tags:
+  - Luci
+  - openwrt
+categories: Luci
 ---
 
 ## 修改默认主题 \(样例Theme 为 Lafite\)

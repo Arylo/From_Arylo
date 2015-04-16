@@ -1,6 +1,13 @@
 title: Luci Module 模块目录
 date: 2014-12-08 12:12:12
-tags: [Luci, openwrt]
+tags:
+  - Luci
+  - openwrt
+categories: Luci
+keywords:
+  - Luci
+  - OpenWrt
+  - Modules
 ---
 
 ## Modules Index 模块目录
