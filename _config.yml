@@ -105,6 +105,7 @@ since: 2014
 
 menu:
   home: /
+  categories: /categories
   archives: /archives
   tags: /tags
 
