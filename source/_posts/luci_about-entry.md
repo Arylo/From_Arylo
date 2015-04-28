@@ -1,4 +1,4 @@
-title: 关于Entry()
+title: "关于Entry()"
 date: 2014-12-16 12:12:12
 tags:
   - Luci
