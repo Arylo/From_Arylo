@@ -16,9 +16,9 @@ keywords:
 
 > http://wiki.openwrt.org/doc/techref/uci
 
-Lua Bindings for UCI
+Lua上的uci
 
-For those who like lua, UCI can be accessed in your code via the package libuci-lua. Just install the package then, in your lua code do
+对于那些喜欢Lua的人, UCI已经将相关的代码封装到libuci-lua里. 只要安装这个包, 你就可以在Lua中使用UCI.
 
 ```lua
 require("uci")
@@ -34,7 +34,7 @@ uci.cursor() (that instantiates a uci context instance) e.g.
 ```lua
 uci = uci.cursor()
 ```
-or
+或者
 ```lua
 uci = uci.cursor(nil, "/var/state")
 ```
