@@ -16,7 +16,7 @@ keywords:
 # 声明
 ## 最后更新日期
 ```
-Data: 2015.05.10
+Data: 2015.06.08
 ```
 
 ## 遇上问题的版本号
@@ -85,3 +85,55 @@ error downloading dependent layers
 ```
 Pull 其他Image, 完成后再Pull回来
 ```
+
+---
+```javascript
+/**************************************************
+ * 2015-06-08 更新分隔
+ **************************************************/
+```
+---
+
+
+## 阿里云下 docker 启动失败
+错误:
+```
+FATA[0000] Get http:///var/run/docker.sock/v1.18/containers/json: dial unix /var/run/docker.sock: no such file or directory. Are you trying to connect to a TLS-enabled daemon without TLS?
+```
+
+起因:
+```
+因为ubuntu放在阿里云上面, 而阿里云把所以内网IP都占用了, 所以要搞一下配置文件
+```
+
+解法:
+```
+arylo@PandoraBox:~$ sudo docker -d
+# INFO[0000] +job init_networkdriver()
+# INFO[0000] +job serveapi(unix:///var/run/docker.sock)
+# INFO[0000] Listening for HTTP on unix (/var/run/docker.sock)
+# Could not find a free IP address range for interface 'docker0'.
+#  Please configure its address manually and run 'docker -b docker0'
+# INFO[0000] -job init_networkdriver() = ERR (1)
+# FATA[0000] Shutting down daemon due to errors: Could not find a free IP address range for interface 'docker0'.
+#  Please configure its address manually and run 'docker -b docker0'
+
+sudo vi /etc/network/interfaces
+# 把 "up route add -net 172.16.0.0 netmask 255.240.0.0 gw 10.170.191.247 dev eth0"
+#  这一注释掉
+
+arylo@PandoraBox:~$ sudo /etc/init.d/networking restart
+# * Running /etc/init.d/networking restart is deprecated because it may not enable again some interfaces
+# * Reconfiguring network interfaces...
+# ssh start/running, process 3547
+# ssh stop/waiting
+# ssh start/running, process 3598
+
+arylo@PandoraBox:~$ sudo service docker restart
+# docker stop/waiting
+# docker start/running, process 3884
+```
+
+解法参照:
+[http://www.cnblogs.com/MicroTeam/p/see-docker-run-in-debian-with-aliyun-ecs.html](http://www.cnblogs.com/MicroTeam/p/see-docker-run-in-debian-with-aliyun-ecs.html)
+虽然这篇的系统是Debian, 但还是感谢作者
