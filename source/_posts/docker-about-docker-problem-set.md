@@ -119,8 +119,8 @@ arylo@PandoraBox:~$ sudo docker -d
 #  Please configure its address manually and run 'docker -b docker0'
 
 sudo vi /etc/network/interfaces
-# 把 "up route add -net 172.16.0.0 netmask 255.240.0.0 gw 10.170.191.247 dev eth0"
-#  这一注释掉
+# "up route add -net 172.16.0.0 netmask 255.240.0.0 gw 10.170.191.247 dev eth0"
+# 将这一句注释掉
 
 arylo@PandoraBox:~$ sudo /etc/init.d/networking restart
 # * Running /etc/init.d/networking restart is deprecated because it may not enable again some interfaces
