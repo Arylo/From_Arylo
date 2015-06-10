@@ -16,18 +16,20 @@ keywords:
 
 # 新Opkg镜像开始运作了
 
-平常Pandorabox的opkg都是往[Openwrt官方源](http://downloads.openwrt.org/snapshots/trunk/ralink/packages/)走的, 速度慢先不说, 有时候还被共产主义了, 加上没有做Pandorabox兼容, 导致很多用户(发烧友)反应, 不能用!!!
+平常Pandorabox 的opkg 都是往[Openwrt官方源](http://downloads.openwrt.org/snapshots/trunk/ralink/packages/)走的, 速度慢先不说, 有时候还被共产主义了, 加上没有做Pandorabox 兼容, 导致很多用户(发烧友)反应, 不能用!!!
 
 搭建这镜像不难, 就是共产主义太过伟大了, 动不动就要你备案啊, 备案啊, 还是备案啊...
 我们可是热爱科学, 热爱自由的新一代接班人! 所以尝试了几种方法跳过了这个步骤 (＾－＾)V
 
-# 此镜像非镜像
+# 此镜像非彼镜像
 
-镜像下的ipk 都是Lintel编译的, 并非与Openwrt下的ipk 同步, 所以如果是使用其他非pandorabox的固件, (可能)会出现不兼容问题, 所以在这里说一下
+镜像下的ipk 都是Lintel 大大编译的, 所以并非与Openwrt下的ipk 同步, 所以如果是使用其他非Pandorabox 的固件, (可能)会出现不兼容问题, 所以在这里说一下
 
 # 留种不留人
 
-## 镜像在下面
+简简单单不多说话
+
+## 镜像地址
 
 [http://downloads.pandorabox.org.cn/pandorabox/ralink/packages/](http://downloads.pandorabox.org.cn/pandorabox/ralink/packages/)
 
