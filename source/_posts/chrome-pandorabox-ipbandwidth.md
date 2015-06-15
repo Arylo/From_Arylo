@@ -13,10 +13,8 @@ keywords:
   - 扩展
 ---
 
-源码地址: [地址][github]
-扩展已经发布: [地址][chrome]
-
-===
+源码地址: [Github][github]
+扩展已经发布: [ChromeStore][chrome]
 
 ## 最近更新时间
 
