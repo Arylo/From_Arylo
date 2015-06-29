@@ -3,6 +3,7 @@ date: 2014-12-08 12:12:12
 tags:
   - Luci
   - openwrt
+  - Lafite
 categories: Luci
 ---
 
@@ -40,5 +41,5 @@ option mediaurlbase /luci-static/openwrt.org
 ```
 修改为
 ```
-option mediaurlbase /luci-static/nc
+option mediaurlbase /luci-static/lafite
 ```
