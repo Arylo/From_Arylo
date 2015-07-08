@@ -44,6 +44,8 @@ NGINX_MAX_UPLOAD_SIZE: Maximum acceptable upload size. Defaults to 20m.
 
 话说 <http://www.pandorabox.org.cn/> 准备可以下载最新的pandorabox 固件, 现在和朋友在准备写一个关于提供文件列表json 的组件(也为了后面的插件下载)
 
+
+---
 > Arylo, 走在全栈工程师的路上, 正在学习设计和前端
-> 现时加入Lintel 的PandoraBox Team, 负责打游击, 俗称打杂
+> 现时加入`Lintel`的`PandoraBox Team`, 负责打游击, 俗称打杂
 > tomail:arylo.open@gmail.com
