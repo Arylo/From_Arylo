@@ -3,6 +3,8 @@ date: 2015-06-09 16:16:53
 tags:
   - Opkg
   - ipk
+  - Pandorabox
+  - OpenWrt
 categories: 服务器
 keywords:
   - Pandorabox
