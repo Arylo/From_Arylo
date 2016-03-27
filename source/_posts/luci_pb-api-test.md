@@ -57,7 +57,7 @@ date: 2016-01-06 00:29:24
 在使用之前, 先磨好工具, gulp+coffee, 因为对CoffeeScript 的好感, 所以这里也使用它
 
 首先写好测试运行的Gulp Task.
-```
+```CoffeeScript
 gulp.task('test', ['test:mocha']);
 
 gulp.task('test:mocha', function () {
@@ -87,7 +87,7 @@ gulp.task('test:mocha', function () {
 > Talk is cheap, show my code.
 
 
-```
+```CoffeeScript
 supertest = require 'supertest'
 should    = require 'should'
 
