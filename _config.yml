@@ -86,18 +86,12 @@ deploy:
   message: Update
   repo:
     github: https://github.com/Arylo/arylo.github.io.git,master
-    gitcafe: https://gitcafe.com/Arylo/arylo.git,gitcafe-pages
+    coding: https://git.coding.net/arylo/From_Arylo.git,coding-pages
 
 # =============================================================================
 # NexT Theme configuration
 # =============================================================================
 since: 2014
-
-menu:
-  home: /
-  categories: /categories
-  archives: /archives
-  tags: /tags
 
 icon_font: default
 
