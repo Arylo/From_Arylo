@@ -6,7 +6,7 @@ tags:
   - Pandorabox
   - M1
   - OpenWrt
-categories: 服务器
+categories: Server
 keywords:
   - Pandorabox
   - Redmine

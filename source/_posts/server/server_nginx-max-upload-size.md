@@ -4,7 +4,7 @@ tags:
   - gitlab
   - nginx
   - docker
-categories: 服务器
+categories: Server
 keywords:
   - docker
   - gitlab
