@@ -3,7 +3,7 @@ date: 2015-04-14 00:01:27
 tags:
   - 被黑了
   - 服务器日志
-categories: Server
+categories: Server/Log
 keywords:
   - Pandorabox
   - Hacked
