@@ -1,13 +1,14 @@
-title: 'Gulp 学习笔记'
+title: '[Gulp游记]Gulp 学习笔记'
 tags:
   - Javascript
   - Gulp
-  - Grunt
+  - Gulp游记
   - 学习笔记
 categories: Javascript
 keywords:
   - Javascript
   - Gulp
+  - Gulp游记
   - Grunt
   - 学习笔记
   - Arylo
@@ -90,7 +91,7 @@ date: 2015-08-30 01:46:55
 + `gulp-notify`
 + `gulp-rename`
 + `gulp-replace`
-+ `gulp-tap`
++ `gulp-tap` [Link](/2016/06/28/javascript/gulp-tap/)
 > 我用于识别文件内容, 不知道其他人怎样用
 + `gulp-load-plugins`
 > 自动加载Gulp模块
