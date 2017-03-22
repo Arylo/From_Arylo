@@ -1,0 +1,36 @@
+sudo: false
+
+language: node_js
+
+node_js: stable
+
+cache:
+  directories:
+    - node_modules
+
+before_install:
+  - echo '' > .npmrc
+  - git clone https://github.com/Arylo/hexo-theme-next.git themes/next
+
+install:
+  - npm install -g hexo-cli
+
+script:
+  - hexo g
+
+after_script:
+  - cd ./public
+  - git init
+  - git config user.name "AryloYeung"
+  - git config user.email "arylo.open@gmail.com"
+  - git add .
+  - git commit -m "Update Blog by Travis CI"
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" HEAD:master
+
+branches:
+  only:
+    - master
+
+env:
+  global:
+    - GH_REF: github.com/Arylo/arylo.github.io.git
