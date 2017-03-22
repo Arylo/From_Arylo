@@ -11,10 +11,11 @@ cache:
 before_install:
   - echo '' > .npmrc
   - rm -rf themes/next
-  - git clone https://github.com/Arylo/hexo-theme-next.git themes/next
+  - git clone ${THEME_REF} themes/next
 
 install:
   - npm install -g hexo-cli
+  - npm install
 
 script:
   - hexo g
@@ -35,3 +36,4 @@ branches:
 env:
   global:
     - GH_REF: github.com/Arylo/arylo.github.io.git
+    - THEME_REF: https://github.com/Arylo/hexo-theme-next.git
