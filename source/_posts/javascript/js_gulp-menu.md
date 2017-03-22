@@ -102,11 +102,4 @@ date: 2015-08-30 01:46:55
 + `yargs`
 > 对命令行使用者很不错
 
-
-
----
-> Arylo, 走在全栈工程师的路上, 正在学习设计和前端
-> 现时加入`Lintel`的`PandoraBox Team`, 负责打游击, 俗称打杂, 5黑里的辅助
-> tomail:arylo.open@gmail.com
-
 [ERROR_SCP]: arylo.me/2015/07/08/js_npm-grunt-gulp-scp/

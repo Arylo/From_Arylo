@@ -42,8 +42,3 @@ find . -type f -name "*.rar" -exec unrar x -p扶她奶茶 -u {} \;
 ## 3-Fail
 
 如果遇上`no terminating ";" or "+"`, 那就重新看一下我行命令最后面的转移符吧~
-
----
-> Arylo, 走在半栈工程师的路上, 正在学习设计和前端
-> 现时加入`Lintel`的`PandoraBox Team`, 负责打游击, 俗称打杂, 5黑里的辅助
-> tomail:arylo.open@gmail.com

@@ -74,11 +74,3 @@ keywords:
 [power]: http://item.jd.com/1300394.html
 [box1]: http://item.jd.com/1222810.html
 [box2]: http://item.jd.com/1472230.html
-
-
-
-
----
-> Arylo, 走在全栈工程师的路上, 正在学习设计和前端
-> 现时加入`Lintel`的`PandoraBox Team`, 负责打游击, 俗称打杂
-> tomail:arylo.open@gmail.com

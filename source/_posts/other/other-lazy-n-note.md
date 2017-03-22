@@ -40,9 +40,3 @@ keywords:
 # 5
 
 嗯, 说这么多, 我还是不会填坑的.
-
-
----
-> Arylo, 向往全栈工程师的打杂, 正在学习设计和前端
-> 现时被`Lintel`诱拐到`PandoraBox Team`, 负责打游击, 俗称打杂
-> tomail:arylo.open@gmail.com
