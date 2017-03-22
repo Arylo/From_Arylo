@@ -71,7 +71,8 @@ pagination_dir: page
 disqus_shortname:
 
 # Duoshuo
-duoshuo_shortname: from-arylo
+# 多说于2017.06.01起开始停止服务
+# duoshuo_shortname: from-arylo
 
 # Extensions
 ## Plugins: https://github.com/hexojs/hexo/wiki/Plugins
@@ -86,7 +87,8 @@ deploy:
   message: Update
   repo:
     github: https://github.com/Arylo/arylo.github.io.git,master
-    coding: https://git.coding.net/arylo/From_Arylo.git,coding-pages
+    # 停止Coding库更新 --2017.03.22
+    # coding: https://git.coding.net/arylo/From_Arylo.git,coding-pages
 
 # =============================================================================
 # NexT Theme configuration
