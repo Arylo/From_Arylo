@@ -10,6 +10,7 @@ cache:
 
 before_install:
   - echo '' > .npmrc
+  - rm -rf themes/next
   - git clone https://github.com/Arylo/hexo-theme-next.git themes/next
 
 install:
