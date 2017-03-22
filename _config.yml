@@ -82,13 +82,17 @@ exclude_generator:
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
-deploy:
-  type: git
-  message: Update
-  repo:
-    github: https://github.com/Arylo/arylo.github.io.git,master
+# 使用CI 更新博客 --2017.03.22
+# deploy:
+  # type: git
+  # message: Update
+  # repo:
+    # github: https://github.com/Arylo/arylo.github.io.git,master
     # 停止Coding库更新 --2017.03.22
     # coding: https://git.coding.net/arylo/From_Arylo.git,coding-pages
+
+sitemap:
+  path: sitemap.xml
 
 # =============================================================================
 # NexT Theme configuration
