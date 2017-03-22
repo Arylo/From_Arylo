@@ -5,9 +5,8 @@ tags:
   - iOS
 categories: 小米
 keywords:
-tags:
-  - 小米
   - iOS
+  - 小米
 ---
 
 # 只是吐槽一下
