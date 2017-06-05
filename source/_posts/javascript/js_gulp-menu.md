@@ -102,4 +102,4 @@ date: 2015-08-30 01:46:55
 + `yargs`
 > 对命令行使用者很不错
 
-[ERROR_SCP]: arylo.me/2015/07/08/js_npm-grunt-gulp-scp/
+[ERROR_SCP]: /2015/07/08/js_npm-grunt-gulp-scp/

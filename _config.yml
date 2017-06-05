@@ -21,7 +21,7 @@ copyright: true
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://arylo.me
+url: http://arylo.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -104,7 +104,7 @@ icon_font: default
 
 highlight_theme: normal
 
-avatar: http://arylo.me/arylo.png
+avatar: http://arylo.github.io/arylo.png
 
 social:
   GitHub: https://github.com/Arylo
