@@ -1,5 +1,4 @@
-layout: '旧JS文件支持TS智能提示'
-title: Javascript
+title: '让旧JS 文件野支持TS 智能提示'
 date: 2017-06-05 14:17:26
 tags:
   - Arylo
@@ -63,7 +62,7 @@ declare namespace newifi {
 };
 ```
 
-但在`newifi.js`里输入`newifi.`后, 没有提示api. 嗯? 这是怎么回事呢? 啊, 可能我少了那`///`, 好吧, 我补回来. 
+但在`newifi.js`里输入`newifi.`后, 没有提示api. 嗯? 这是怎么回事呢? 啊, 可能我少了那`///`, 好吧, 我补回来.
 
 ```typescript
 /// <reference types="./api.d.ts" />
