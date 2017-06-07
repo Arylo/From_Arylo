@@ -1,4 +1,4 @@
-title: '让旧JS 文件野支持TS 智能提示'
+title: '让旧JS 文件也支持TS 智能提示'
 date: 2017-06-05 14:17:26
 tags:
   - Arylo
