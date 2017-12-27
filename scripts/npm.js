@@ -10,7 +10,7 @@ hexo.extend.filter.register('before_post_render', function (data){
                         1: packageName
                     } = words.match(/npm:((?:@?[a-z\d_-]+\/)?[a-z\d_-]+)/i);
                     const url = `https://www.npmjs.com/package/${packageName}`;
-                    const title = `Node Library: ${packageName}`;
+                    const title = `"Node Library: ${packageName}"`;
                     return `[${packageName}](${url} ${title})`;
             });
     }
