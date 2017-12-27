@@ -1,9 +1,18 @@
-title: '好用的NPM 库'
+title: '好用的Node 库'
 tags:
   - Javascript
   - Npm
   - Nodejs
   - Node
+  - Angular
+  - AngularJS
+  - Grunt
+  - Gulp
+  - Typescript
+  - Coffeescript
+  - Express
+  - Macha
+  - Karma
 categories: Javascript
 keywords:
   - Javascript
@@ -11,22 +20,57 @@ keywords:
   - Nodejs
   - Node
   - Arylo
+  - Angular
+  - AngularJS
+  - Grunt
+  - Gulp
+  - Typescript
+  - Coffeescript
+  - Express
+  - Macha
+  - Karma
 date: 2017-12-10 12:22:38
 ---
 
-# 博客
+从13年接触angular开始，就不断接触摸索各种node库，感叹前端圈的变化之大。下面我将我用过的，收集来的库整理出来，望有缘人需要它们
+
+# 博客类
 
 - hexo
+  + hexo-admin
+    这个插件背后是一个美好的爱情故事
+  + hexo-deployer-git
+    自从某个版本出问题之后, 我就用`Tracis`帮我发布
+  + hexo-filter-cleanup
+    咱就是用这样压缩混肴的
 
 # 构建工具
+
+## Grunt
+
+`Grunt`已经算是古老的产物, `Gulp`出现后就一下子超越他, 不过某些旧项目还是需要了解它的.
+
+- grunt
+  + grunt-contrib-htmlmin
+  + grunt-contrib-stylus
+  + grunt-contrib-cssmin
+  + grunt-autoprefixer
+  + grunt-contrib-imagemin
+  + grunt-contrib-clean
+  + grunt-contrib-copy
+  + grunt-contrib-watch
 
 ## Gulp
 
 - gulp
 - gulp-cli
+- gulp-jade
+  `jade`已经改名叫`pug`
 - gulp-pug
+- gulp-ejs
 - gulp-htmlmin
 - gulp-processhtml
+- gulp-typescript
 - gulp-coffee
 - gulp-coffeelint
 - gulp-ng-annotate
@@ -49,6 +93,7 @@ date: 2017-12-10 12:22:38
 - gulp-tap
 - gulp-load-plugins
 - gulp-task-listing
+- gulp-karma
 - gulp-mocha
 
 # 数据库相关
@@ -59,12 +104,22 @@ date: 2017-12-10 12:22:38
 # 测试相关
 
 - karma
-  AnuglarJS 测试用的
+  `AnuglarJS`测试用的
+  + karma-coffee-preprocessor
+  + karma-ie-launcher
+  + karma-firefox-launcher
+  + karma-safari-launcher
+  + karma-chrome-launcher
+  + karma-phantomjs-launcher
+  + karma-jasmine
+  + karma-coverage
+  + karma-junit-reporter
+  + karma-story-reporter
 - macha
+  + mochawesome
 - should
 - faker
   模拟数据用, 你懂的
-- mochawesome
 - nyc
 - istanbul
 - source-map-support
@@ -112,7 +167,7 @@ date: 2017-12-10 12:22:38
 
 - cross-env
 - yargs
-  弄本地工具时, 可以用它解析参数
+  弄命令行工具时, 可以用它解析参数
 
 # 服务器相关
 
@@ -128,10 +183,37 @@ date: 2017-12-10 12:22:38
 - cors
 - cookie-parser
 
+# 页面端相关
+
+因为一直在angular圈打转，基本没用过vue和react，所以就没有它们的。
+
+## AngularJS
+
+- angular
+  + angular-animate
+  + angular-messages
+  + angular-route
+  + angular-translate
+  + angular-translate-loader-partial
+  + angular-file-upload
+
+## Angular
+
+- ngx-echarts
+  背后是百度的`echarts`
+- ng2-file-upload
+- ng-zorro-antd
+  蚂蚁的`UI`库, 不解释
+
+# 客户端相关
+
+- electron
+
 # 调试相关
 
 - debug
 - browser-sync
+- connect-livereload
 
 # 日志相关
 
