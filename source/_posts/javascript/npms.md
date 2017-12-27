@@ -34,7 +34,7 @@ keywords:
 date: 2017-12-10 12:22:38
 ---
 
-从13年接触angular开始，就不断接触摸索各种node库，感叹前端圈的变化之大。下面我将我用过的，收集来的库整理出来，望有缘人需要它们
+从13年接触angular开始，就不断接触摸索各种node库，感叹前端圈的变化之大。下面本人将用过的，收集来的库整理出来，望有缘人需要它们
 
 # 博客类
 
@@ -98,11 +98,6 @@ date: 2017-12-10 12:22:38
 - npm:gulp-karma
 - npm:gulp-mocha
 
-# 数据库相关
-
-- npm:mongoose
-- npm:lowdb
-
 # 测试相关
 
 - npm:karma
@@ -117,7 +112,7 @@ date: 2017-12-10 12:22:38
   + npm:karma-coverage
   + npm:karma-junit-reporter
   + npm:karma-story-reporter
-- npm:macha
+- npm:mocha
   + npm:mochawesome
 - npm:should
 - npm:faker
@@ -132,12 +127,12 @@ date: 2017-12-10 12:22:38
 
 # 语言相关
 
-## `CoffeeScript`
+## CoffeeScript
 
 - npm:coffee-script
 - npm:coffeelint
 
-## `TypeScript`
+## TypeScript
 
 - npm:typescript
 - npm:ts-node
@@ -170,8 +165,6 @@ date: 2017-12-10 12:22:38
 # 运行环境
 
 - npm:cross-env
-- npm:yargs
-  弄命令行工具时, 可以用它解析参数
 - npm:nrm
 - npm:nvm
 
@@ -188,10 +181,20 @@ date: 2017-12-10 12:22:38
 - npm:body-parser
 - npm:cors
 - npm:cookie-parser
+- npm:socket.io
+
+# 数据库相关
+
+- npm:mongoose
+- npm:lowdb
 
 # 页面端相关
 
 因为一直在angular圈打转，基本没用过vue和react，所以就没有它们的。
+
+- npm:jquery
+- npm:bootstrap
+- npm:fullpage.js
 
 ## AngularJS
 
@@ -215,11 +218,19 @@ date: 2017-12-10 12:22:38
 
 - npm:electron
 
+# 命令行端相关
+
+- npm:yargs
+  可以用它解析命令行参数
+- npm:inquirer
+  写过`yo`的脚手架就知道这个提示是多好用
+
 # 调试相关
 
 - npm:debug
 - npm:browser-sync
 - npm:connect-livereload
+  当年的F5解放组件, 但现在通过`socket`接收刷新信号来取代它取代了
 
 # 日志相关
 
