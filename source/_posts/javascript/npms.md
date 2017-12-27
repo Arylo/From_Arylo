@@ -8,11 +8,12 @@ tags:
   - AngularJS
   - Grunt
   - Gulp
-  - Typescript
-  - Coffeescript
+  - TypeScript
+  - CoffeeScript
   - Express
   - Macha
   - Karma
+  - Hexo
 categories: Javascript
 keywords:
   - Javascript
@@ -24,11 +25,12 @@ keywords:
   - AngularJS
   - Grunt
   - Gulp
-  - Typescript
-  - Coffeescript
+  - TypeScript
+  - CoffeeScript
   - Express
   - Macha
   - Karma
+  - Hexo
 date: 2017-12-10 12:22:38
 ---
 
@@ -36,12 +38,12 @@ date: 2017-12-10 12:22:38
 
 # 博客类
 
-- hexo
-  + hexo-admin
+- npm:hexo
+  + npm:hexo-admin
     这个插件背后是一个美好的爱情故事
-  + hexo-deployer-git
+  + npm:hexo-deployer-git
     自从某个版本出问题之后, 我就用`Tracis`帮我发布
-  + hexo-filter-cleanup
+  + npm:hexo-filter-cleanup
     咱就是用这样压缩混肴的
 
 # 构建工具
@@ -50,138 +52,142 @@ date: 2017-12-10 12:22:38
 
 `Grunt`已经算是古老的产物, `Gulp`出现后就一下子超越他, 不过某些旧项目还是需要了解它的.
 
-- grunt
-  + grunt-contrib-htmlmin
-  + grunt-contrib-stylus
-  + grunt-contrib-cssmin
-  + grunt-autoprefixer
-  + grunt-contrib-imagemin
-  + grunt-contrib-clean
-  + grunt-contrib-copy
-  + grunt-contrib-watch
+- npm:grunt
+  + npm:grunt-contrib-htmlmin
+  + npm:grunt-contrib-stylus
+  + npm:grunt-contrib-cssmin
+  + npm:grunt-autoprefixer
+  + npm:grunt-contrib-imagemin
+  + npm:grunt-contrib-clean
+  + npm:grunt-contrib-copy
+  + npm:grunt-contrib-watch
 
 ## Gulp
 
-- gulp
-- gulp-cli
-- gulp-jade
+- npm:gulp
+- npm:gulp-cli
+- npm:gulp-jade
   `jade`已经改名叫`pug`
-- gulp-pug
-- gulp-ejs
-- gulp-htmlmin
-- gulp-processhtml
-- gulp-typescript
-- gulp-coffee
-- gulp-coffeelint
-- gulp-ng-annotate
-- gulp-uglify
-- gulp-stylus
-- gulp-autoprefixer
-- gulp-csso
-- gulp-imagemin
-- gulp-cached
-- gulp-remember
-- gulp-clean
-- gulp-concat
-- gulp-exec
-- gulp-if
-- gulp-lintspaces
-- gulp-rename
-- gulp-replace
-- gulp-run-sequence
-- gulp-supervisor
-- gulp-tap
-- gulp-load-plugins
-- gulp-task-listing
-- gulp-karma
-- gulp-mocha
+- npm:gulp-pug
+- npm:gulp-ejs
+- npm:gulp-htmlmin
+- npm:gulp-processhtml
+- npm:gulp-typescript
+- npm:gulp-coffee
+- npm:gulp-coffeelint
+- npm:gulp-ng-annotate
+- npm:gulp-uglify
+- npm:gulp-stylus
+- npm:gulp-autoprefixer
+- npm:gulp-csso
+- npm:gulp-imagemin
+- npm:gulp-cached
+- npm:gulp-remember
+- npm:gulp-clean
+- npm:gulp-concat
+- npm:gulp-exec
+- npm:gulp-if
+- npm:gulp-lintspaces
+- npm:gulp-rename
+- npm:gulp-replace
+- npm:gulp-run-sequence
+- npm:gulp-supervisor
+- npm:gulp-tap
+- npm:gulp-load-plugins
+- npm:gulp-task-listing
+- npm:gulp-karma
+- npm:gulp-mocha
 
 # 数据库相关
 
-- mongoose
-- lowdb
+- npm:mongoose
+- npm:lowdb
 
 # 测试相关
 
-- karma
+- npm:karma
   `AnuglarJS`测试用的
-  + karma-coffee-preprocessor
-  + karma-ie-launcher
-  + karma-firefox-launcher
-  + karma-safari-launcher
-  + karma-chrome-launcher
-  + karma-phantomjs-launcher
-  + karma-jasmine
-  + karma-coverage
-  + karma-junit-reporter
-  + karma-story-reporter
-- macha
-  + mochawesome
-- should
-- faker
+  + npm:karma-coffee-preprocessor
+  + npm:karma-ie-launcher
+  + npm:karma-firefox-launcher
+  + npm:karma-safari-launcher
+  + npm:karma-chrome-launcher
+  + npm:karma-phantomjs-launcher
+  + npm:karma-jasmine
+  + npm:karma-coverage
+  + npm:karma-junit-reporter
+  + npm:karma-story-reporter
+- npm:macha
+  + npm:mochawesome
+- npm:should
+- npm:faker
   模拟数据用, 你懂的
-- nyc
-- istanbul
-- source-map-support
-- supertest
-- supertest-session
+- npm:nyc
+- npm:istanbul
+- npm:source-map-support
+- npm:supertest
+- npm:supertest-session
   因为`supertest`不支持保存session
-- phantomjs-prebuilt
+- npm:phantomjs-prebuilt
 
-# `Coffeescript`相关
+# 语言相关
 
-- coffee-script
-- coffeelint
+## `CoffeeScript`
 
-# `Typescript`相关
+- npm:coffee-script
+- npm:coffeelint
 
-- typescript
-- ts-node
-- tsconfig-paths
-- tshint
+## `TypeScript`
+
+- npm:typescript
+- npm:ts-node
+- npm:tsconfig-paths
+- npm:tshint
 
 # 工具集
 
-- glob
-- lodash
-- md5
-- md5-file
+- npm:glob
+- npm:lodash
+- npm:md5
+- npm:md5-file
   可以自己用`md5`改写
-- rxjs
-- y-config
-- schedule-cache
-- validator
-  + class-validator
-- bluebird
-- config-yaml
-- yaml-config
+- npm:rxjs
+- npm:y-config
+- npm:schedule-cache
+- npm:validator
+  + npm:class-validator
+- npm:bluebird
+- npm:config-yaml
+- npm:yaml-config
   `config-yaml`和`yaml-config`的区别就是前者不需要根据环境变量, 就像平常`JSON.parse`一样, 后者就是多了一层环境变量的嵌套
-- moment
-- moment-timezone
+- npm:moment
+- npm:moment-timezone
 
 # 基础加强集合
 
-- fs-extra
+- npm:fs-extra
 
 # 运行环境
 
-- cross-env
-- yargs
+- npm:cross-env
+- npm:yargs
   弄命令行工具时, 可以用它解析参数
+- npm:nrm
+- npm:nvm
 
 # 服务器相关
 
 - NestJS
-  + @nestjs/core
-  + @nestjs/common
-  + @nestjs/testing
+  + npm:@nestjs/core
+  + npm:@nestjs/common
+  + npm:@nestjs/testing
     测试`Nest`时需要它
-- express
-  + express-session
-- multer
-- body-parser
-- cors
-- cookie-parser
+- npm:express
+  + npm:express-session
+- npm:multer
+- npm:body-parser
+- npm:cors
+- npm:cookie-parser
 
 # 页面端相关
 
@@ -189,33 +195,33 @@ date: 2017-12-10 12:22:38
 
 ## AngularJS
 
-- angular
-  + angular-animate
-  + angular-messages
-  + angular-route
-  + angular-translate
-  + angular-translate-loader-partial
-  + angular-file-upload
+- npm:angular
+  + npm:angular-animate
+  + npm:angular-messages
+  + npm:angular-route
+  + npm:angular-translate
+  + npm:angular-translate-loader-partial
+  + npm:angular-file-upload
 
 ## Angular
 
-- ngx-echarts
+- npm:ngx-echarts
   背后是百度的`echarts`
-- ng2-file-upload
-- ng-zorro-antd
+- npm:ng2-file-upload
+- npm:ng-zorro-antd
   蚂蚁的`UI`库, 不解释
 
 # 客户端相关
 
-- electron
+- npm:electron
 
 # 调试相关
 
-- debug
-- browser-sync
-- connect-livereload
+- npm:debug
+- npm:browser-sync
+- npm:connect-livereload
 
 # 日志相关
 
-- log4js
-- bunyan
+- npm:log4js
+- npm:bunyan
