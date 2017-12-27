@@ -1,7 +1,7 @@
 hexo.extend.filter.register('before_post_render', function (data){
 
     const content = data.content;
-    const MAX_WORDS_COUNT = 350;
+    const MAX_WORDS_COUNT = 500;
     const MAX_WORDS_LINK = 20;
 
     if (content.length > (MAX_WORDS_COUNT + 25)) {

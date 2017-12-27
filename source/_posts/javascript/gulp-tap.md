@@ -1,4 +1,5 @@
 title: '[Gulp游记]gulp-tap'
+date: 2016-06-28 01:43:19
 tags:
   - Javascript
   - Gulp
@@ -12,7 +13,6 @@ keywords:
   - Gulp游记
   - Arylo
   - 学习笔记
-date: 2016-06-28 01:43:19
 ---
 
 # gulp-tap
