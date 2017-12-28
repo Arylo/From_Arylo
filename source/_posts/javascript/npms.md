@@ -42,9 +42,9 @@ date: 2017-12-10 12:22:38
   + npm:hexo-admin
     这个插件背后是一个美好的爱情故事
   + npm:hexo-deployer-git
-    自从某个版本出问题之后, 我就用`Tracis`帮我发布
+    自从某个版本出问题之后, 我就用`Travis`帮我发布
   + npm:hexo-filter-cleanup
-    咱就是用这样压缩混肴的
+    咱就是用这个压缩混肴的
 
 # 构建工具
 
@@ -98,33 +98,6 @@ date: 2017-12-10 12:22:38
 - npm:gulp-karma
 - npm:gulp-mocha
 
-# 测试相关
-
-- npm:karma
-  `AnuglarJS`测试用的
-  + npm:karma-coffee-preprocessor
-  + npm:karma-ie-launcher
-  + npm:karma-firefox-launcher
-  + npm:karma-safari-launcher
-  + npm:karma-chrome-launcher
-  + npm:karma-phantomjs-launcher
-  + npm:karma-jasmine
-  + npm:karma-coverage
-  + npm:karma-junit-reporter
-  + npm:karma-story-reporter
-- npm:mocha
-  + npm:mochawesome
-- npm:should
-- npm:faker
-  模拟数据用, 你懂的
-- npm:nyc
-- npm:istanbul
-- npm:source-map-support
-- npm:supertest
-- npm:supertest-session
-  因为`supertest`不支持保存session
-- npm:phantomjs-prebuilt
-
 # 语言相关
 
 ## CoffeeScript
@@ -139,28 +112,37 @@ date: 2017-12-10 12:22:38
 - npm:tsconfig-paths
 - npm:tshint
 
-# 工具集
+# 基础加强集合
 
 - npm:glob
+- npm:fs-extra
+- npm:mkdirp
+- npm:targz
+  用来处理`.tar.gz`压缩包
+- npm:config-yaml
+- npm:yaml-config
+  `config-yaml`和`yaml-config`的区别就是前者不需要根据环境变量, 就像平常`JSON.parse`一样, 后者就是多了一层环境变量的嵌套
+
+# 工具集
+
 - npm:lodash
 - npm:md5
 - npm:md5-file
   可以自己用`md5`改写
 - npm:rxjs
 - npm:y-config
+- npm:node-schedule
 - npm:schedule-cache
+  我用`node-schedule`弄了一个定时`Cache`库
 - npm:validator
   + npm:class-validator
 - npm:bluebird
-- npm:config-yaml
-- npm:yaml-config
-  `config-yaml`和`yaml-config`的区别就是前者不需要根据环境变量, 就像平常`JSON.parse`一样, 后者就是多了一层环境变量的嵌套
 - npm:moment
 - npm:moment-timezone
-
-# 基础加强集合
-
-- npm:fs-extra
+- npm:ms
+  相关时间和毫秒互转
+- npm:optional
+  其实就是一个自带`trycatch`的`require`
 
 # 运行环境
 
@@ -182,6 +164,8 @@ date: 2017-12-10 12:22:38
 - npm:cors
 - npm:cookie-parser
 - npm:socket.io
+- npm:nodemailer
+- npm:http-proxy-middleware
 
 # 数据库相关
 
@@ -195,6 +179,20 @@ date: 2017-12-10 12:22:38
 - npm:jquery
 - npm:bootstrap
 - npm:fullpage.js
+
+## 图表
+
+- npm:echarts
+  百度的图表库
+- npm:datavjs
+  淘宝的图表库
+- npm:d3
+
+## 动画
+
+- npm:animate.css
+- npm:theaterjs
+  很炫的输入动画库
 
 ## AngularJS
 
@@ -217,6 +215,8 @@ date: 2017-12-10 12:22:38
 # 客户端相关
 
 - npm:electron
+  + npm:electron-builder
+  + npm:electron-packager
 
 # 命令行端相关
 
@@ -225,6 +225,41 @@ date: 2017-12-10 12:22:38
 - npm:inquirer
   写过`yo`的脚手架就知道这个提示是多好用
 
+# 测试相关
+
+- npm:karma
+  `AnuglarJS`测试用的
+  + npm:karma-coffee-preprocessor
+  + npm:karma-ie-launcher
+  + npm:karma-firefox-launcher
+  + npm:karma-safari-launcher
+  + npm:karma-chrome-launcher
+  + npm:karma-phantomjs-launcher
+  + npm:karma-jasmine
+  + npm:karma-coverage
+  + npm:karma-junit-reporter
+  + npm:karma-story-reporter
+- npm:mocha
+  + npm:mochawesome
+- npm:should
+- npm:rewire
+  用于改写库的私有变量, 相当好用
+- npm:faker
+  模拟数据用, 你懂的
+- npm:nyc
+- npm:istanbul
+- npm:source-map-support
+- npm:supertest
+- npm:supertest-session
+  因为`supertest`不支持保存session
+- npm:phantomjs-prebuilt
+- npm:coveralls
+  会将测试报告上传到`coveralls.io`, 常用的写法是`cat ./coverage/lcov.info | coveralls`
+- npm:standard
+  统一处理`.js`格式问题
+- npm:cheerio
+  性能优秀, 可以用来做`HTML`爬虫解析
+
 # 调试相关
 
 - npm:debug
@@ -232,7 +267,17 @@ date: 2017-12-10 12:22:38
 - npm:connect-livereload
   当年的F5解放组件, 但现在通过`socket`接收刷新信号来取代它取代了
 
+# 运维相关
+
+- npm:forever
+- npm:pm2
+  自从有了`pm2`之后, 就没`forever`的事了
+
 # 日志相关
 
 - npm:log4js
 - npm:bunyan
+
+# 文档生成
+
+- npm:apidoc
