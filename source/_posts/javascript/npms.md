@@ -110,6 +110,7 @@ date: 2017-12-10 12:22:38
 - npm:typescript
 - npm:ts-node
 - npm:tsconfig-paths
+  当用的`TS`的`paths`功能时, 就需要它了
 - npm:tshint
 
 # 基础加强集合
@@ -122,6 +123,10 @@ date: 2017-12-10 12:22:38
 - npm:config-yaml
 - npm:yaml-config
   `config-yaml`和`yaml-config`的区别就是前者不需要根据环境变量, 就像平常`JSON.parse`一样, 后者就是多了一层环境变量的嵌套
+- npm:once
+- npm:bluebird
+- path-exists
+  因为`fs.exists`已经[deprecated](https://github.com/iojs/io.js/issues/103)
 
 # 工具集
 
@@ -136,7 +141,6 @@ date: 2017-12-10 12:22:38
   我用`node-schedule`弄了一个定时`Cache`库
 - npm:validator
   + npm:class-validator
-- npm:bluebird
 - npm:moment
 - npm:moment-timezone
 - npm:ms
@@ -224,6 +228,11 @@ date: 2017-12-10 12:22:38
   可以用它解析命令行参数
 - npm:inquirer
   写过`yo`的脚手架就知道这个提示是多好用
+- npm:chalk
+- npm:cliui
+- npm:os-homedir
+  获取用户目录位置
+- npm:get-stdin
 
 # 测试相关
 
@@ -277,6 +286,7 @@ date: 2017-12-10 12:22:38
 
 - npm:log4js
 - npm:bunyan
+- npm:morgan
 
 # 文档生成
 
