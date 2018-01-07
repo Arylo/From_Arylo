@@ -117,7 +117,10 @@ date: 2017-12-10 12:22:38
 
 - npm:glob
 - npm:fs-extra
+- npm:rimraf
+  平时用于`npm script`, 比系统提供的稳定
 - npm:mkdirp
+  `fs-extra`里面已经有这个功能了, 现在用于`npm script`
 - npm:targz
   用来处理`.tar.gz`压缩包
 - npm:config-yaml
