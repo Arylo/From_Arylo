@@ -111,6 +111,8 @@ date: 2017-12-10 12:22:38
 - npm:ts-node
 - npm:tsconfig-paths
   当用的`TS`的`paths`功能时, 就需要它了
+- npm:ts-mocha
+  如果用了`mocha`来测试, 并且测试文件用`Typescript`编写, 建议用这个框架
 - npm:tshint
 
 # 基础加强集合
@@ -314,3 +316,4 @@ date: 2017-12-10 12:22:38
 - npm:ava
 - npm:tape
 - npm:enzyme
+- npm:mocha-steps
