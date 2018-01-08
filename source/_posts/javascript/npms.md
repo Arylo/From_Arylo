@@ -294,3 +294,23 @@ date: 2017-12-10 12:22:38
 # 文档生成
 
 - npm:apidoc
+
+---
+
+> 下面是别人推荐或者自己收集起来的, 暂时没有尝试过
+
+# 页面端相关
+
+## Angular
+
+- npm:ng2-admin
+  + github:ngx-admin
+
+# 测试相关
+
+- npm:randexp
+  根据`RegExp`规则生成随机字符串
+- npm:jest
+- npm:ava
+- npm:tape
+- npm:enzyme
