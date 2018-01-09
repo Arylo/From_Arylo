@@ -41,5 +41,35 @@ date: 2018-01-08 13:37:43
 
 在`mocha.opts`里面补上`--require ts-mocha`后, 其余照旧(除了提出`tsc`这步), 测试成功运行. 可能原本官方就提供这个方法, 后来在`README`里面删除了. 不过现在可以了. 希望以后不要再踩这个坑吧.
 
+# Update at 2018-01-09
+
+之前用上了`ts-mocha`, 后来我看了一下代码, 其实就是一个`ts-node`的二次封装, 所以干脆就用回`ts-node`. 将`mocha.opts`里面的`--require ts-mocha`换成`--require ts-node/register`, 执行测试一下可以用.
+
+## Generate Cover Reporter Fail
+
+虽然测试正常运行, 但生成的覆盖报告却是空的, 可能是参数没有补齐. 好在`nyc`官方提供了[相关的文档][Nyc ts-node], 注意其中几点就行了:
+
+1. 需要`source-map-support`
+
+```bash
+npm install --save-dev source-map-support
+```
+
+3. 补上重要的`nyc`参数
+
+```json
+{
+  ...
+  "extension": [
+    ".ts", ".tsx"
+  ],
+  "all": true,
+  "cache": true
+  ...
+}
+```
+
+再适当地用`include`和`exclude`, 覆盖报告就回来了.
 
 [Other Mocha Opts]: https://github.com/sehrope/node-dogh/blob/master/test/mocha.opts
+[Nyc ts-node]: https://istanbul.js.org/docs/tutorials/typescript/
