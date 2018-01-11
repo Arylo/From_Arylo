@@ -36,7 +36,9 @@ date: 2017-12-10 12:22:38
 
 从13年接触angular开始，就不断接触摸索各种node库，感叹前端圈的变化之大。下面本人将用过的，收集来的库整理出来，望有缘人需要它们
 
-# 博客类
+# 已经用过了的
+
+## 博客类
 
 - npm:hexo
   + npm:hexo-admin
@@ -46,9 +48,9 @@ date: 2017-12-10 12:22:38
   + npm:hexo-filter-cleanup
     咱就是用这个压缩混肴的
 
-# 构建工具
+## 构建工具
 
-## Grunt
+### Grunt
 
 `Grunt`已经算是古老的产物, `Gulp`出现后就一下子超越他, 不过某些旧项目还是需要了解它的.
 
@@ -62,7 +64,7 @@ date: 2017-12-10 12:22:38
   + npm:grunt-contrib-copy
   + npm:grunt-contrib-watch
 
-## Gulp
+### Gulp
 
 - npm:gulp
 - npm:gulp-cli
@@ -98,14 +100,14 @@ date: 2017-12-10 12:22:38
 - npm:gulp-karma
 - npm:gulp-mocha
 
-# 语言相关
+## 语言相关
 
-## CoffeeScript
+### CoffeeScript
 
 - npm:coffee-script
 - npm:coffeelint
 
-## TypeScript
+### TypeScript
 
 - npm:typescript
 - npm:ts-node
@@ -115,7 +117,7 @@ date: 2017-12-10 12:22:38
   如果用了`mocha`来测试, 并且测试文件用`Typescript`编写, 建议用这个框架
 - npm:tshint
 
-# 基础加强集合
+## 基础加强集合
 
 - npm:glob
 - npm:fs-extra
@@ -133,7 +135,7 @@ date: 2017-12-10 12:22:38
 - path-exists
   因为`fs.exists`已经[deprecated](https://github.com/iojs/io.js/issues/103)
 
-# 工具集
+## 工具集
 
 - npm:lodash
 - npm:md5
@@ -153,13 +155,13 @@ date: 2017-12-10 12:22:38
 - npm:optional
   其实就是一个自带`trycatch`的`require`
 
-# 运行环境
+## 运行环境
 
 - npm:cross-env
 - npm:nrm
 - npm:nvm
 
-# 服务器相关
+## 服务器相关
 
 - NestJS
   + npm:@nestjs/core
@@ -176,12 +178,12 @@ date: 2017-12-10 12:22:38
 - npm:nodemailer
 - npm:http-proxy-middleware
 
-# 数据库相关
+## 数据库相关
 
 - npm:mongoose
 - npm:lowdb
 
-# 页面端相关
+## 页面端相关
 
 因为一直在angular圈打转，基本没用过vue和react，所以就没有它们的。
 
@@ -189,7 +191,7 @@ date: 2017-12-10 12:22:38
 - npm:bootstrap
 - npm:fullpage.js
 
-## 图表
+### 图表
 
 - npm:echarts
   百度的图表库
@@ -197,13 +199,13 @@ date: 2017-12-10 12:22:38
   淘宝的图表库
 - npm:d3
 
-## 动画
+### 动画
 
 - npm:animate.css
 - npm:theaterjs
   很炫的输入动画库
 
-## AngularJS
+### AngularJS
 
 - npm:angular
   + npm:angular-animate
@@ -213,7 +215,7 @@ date: 2017-12-10 12:22:38
   + npm:angular-translate-loader-partial
   + npm:angular-file-upload
 
-## Angular
+### Angular
 
 - npm:ngx-echarts
   背后是百度的`echarts`
@@ -221,25 +223,27 @@ date: 2017-12-10 12:22:38
 - npm:ng-zorro-antd
   蚂蚁的`UI`库, 不解释
 
-# 客户端相关
+## 客户端相关
 
 - npm:electron
   + npm:electron-builder
   + npm:electron-packager
 
-# 命令行端相关
+## 命令行端相关
 
 - npm:yargs
   可以用它解析命令行参数
 - npm:inquirer
   写过`yo`的脚手架就知道这个提示是多好用
+- npm:ora
+  进度显示, 非常方便
 - npm:chalk
 - npm:cliui
 - npm:os-homedir
   获取用户目录位置
 - npm:get-stdin
 
-# 测试相关
+## 测试相关
 
 - npm:karma
   `AnuglarJS`测试用的
@@ -274,41 +278,41 @@ date: 2017-12-10 12:22:38
 - npm:cheerio
   性能优秀, 可以用来做`HTML`爬虫解析
 
-# 调试相关
+## 调试相关
 
 - npm:debug
 - npm:browser-sync
 - npm:connect-livereload
   当年的F5解放组件, 但现在通过`socket`接收刷新信号来取代它取代了
 
-# 运维相关
+## 运维相关
 
 - npm:forever
 - npm:pm2
   自从有了`pm2`之后, 就没`forever`的事了
 
-# 日志相关
+## 日志相关
 
 - npm:log4js
 - npm:bunyan
 - npm:morgan
 
-# 文档生成
+## 文档生成
 
 - npm:apidoc
 
----
+# 别人推荐或收集回来的
 
-> 下面是别人推荐或者自己收集起来的, 暂时没有尝试过
+下面是别人推荐或者自己收集回来的, 暂时没有尝试过
 
-# 页面端相关
+## 页面端相关
 
-## Angular
+### Angular
 
 - npm:ng2-admin
   + github:ngx-admin
 
-# 测试相关
+## 测试相关
 
 - npm:randexp
   根据`RegExp`规则生成随机字符串
