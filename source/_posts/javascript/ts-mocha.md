@@ -41,6 +41,8 @@ date: 2018-01-08 13:37:43
 
 在`mocha.opts`里面补上`--require ts-mocha`后, 其余照旧(除了提出`tsc`这步), 测试成功运行. 可能原本官方就提供这个方法, 后来在`README`里面删除了. 不过现在可以了. 希望以后不要再踩这个坑吧.
 
+---
+
 # Update at 2018-01-09
 
 之前用上了`ts-mocha`, 后来我看了一下代码, 其实就是一个`ts-node`的二次封装, 所以干脆就用回`ts-node`. 将`mocha.opts`里面的`--require ts-mocha`换成`--require ts-node/register`, 执行测试一下可以用.

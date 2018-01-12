@@ -6,9 +6,10 @@
 title: From Arylo
 subtitle:
 description:
-author: Arylo
+author: AryloYeung
 email: arylo.open@gmail.com
-language: zh-CN
+# language: zh-CN
+language: zh-Hans
 keywords:
   - Arylo
   - Javascript
