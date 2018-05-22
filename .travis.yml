@@ -21,6 +21,7 @@ script:
   - hexo g
 
 after_script:
+  - cp -R jump ./public
   - cd ./public
   - git init
   - git config user.name "AryloYeung"

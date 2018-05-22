@@ -111,8 +111,12 @@ highlight_theme: normal
 avatar: http://arylo.github.io/arylo.png
 
 social:
-  GitHub: https://github.com/Arylo
+  GitHub: /jump/github
+  NPM: /jump/npm
   Gmail: mailto://arylo.open@gaiml.com
+
+links:
+  坑贤: //yanqing6628780.github.io
 # =============================================================================
 # End NexT Theme configuration
 # =============================================================================
