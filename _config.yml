@@ -1,5 +1,5 @@
 # Hexo Configuration
-## Docs: http://hexo.io/docs/configuration.html
+## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
@@ -8,21 +8,15 @@ subtitle:
 description:
 author: AryloYeung
 email: arylo.open@gmail.com
-# language: zh-CN
+# language: en
 language: zh-Hans
-keywords:
-  - Arylo
-  - Javascript
-  - OpenWrt
-  - Pandorabox
-  - Luci
-  - Chrome
-timezone:
+keywords: Arylo, Javascript, Typescript, Github, OpenWrt, Pandorabox, Luci, Chrome
+timezone: Asia/Hong_Kong
 copyright: true
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://arylo.github.io
+url: http://blog.arylo.space
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -40,6 +34,7 @@ skip_render:
 # Writing
 new_post_name: :title.md # File name of new posts
 default_layout: post
+auto_spacing: true
 titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
@@ -50,7 +45,22 @@ future: true
 highlight:
   enable: true
   line_number: true
+  auto_detect: false
   tab_replace:
+  
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+  
+archive_generator:
+  enabled: true
+  per_page: 50
+  yearly: true
 
 # Category & Tag
 default_category: uncategorized
@@ -77,10 +87,9 @@ disqus_shortname:
 # duoshuo_shortname: from-arylo
 
 # Extensions
-## Plugins: https://github.com/hexojs/hexo/wiki/Plugins
-## Themes: https://github.com/hexojs/hexo/wiki/Themes
-theme: next
-exclude_generator:
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: landscape
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
@@ -98,6 +107,12 @@ sitemap:
 
 hfc_html:
   enable: true
+hfc_js:
+  enable: false
+hfc_img:
+  enable: false
+hfc_favicons:
+  enable: false
 
 # =============================================================================
 # NexT Theme configuration
